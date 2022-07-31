@@ -1,4 +1,4 @@
-
+import React from "react";
 import "./expenses.css";
 import ExpenseItem from "../ExpenseItem/ExpenseItem";
 import Card from "../Card/Card";
