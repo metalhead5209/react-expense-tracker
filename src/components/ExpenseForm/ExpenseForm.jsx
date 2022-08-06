@@ -24,13 +24,13 @@ const ExpenseForm = (props) => {
     const expenseData = {
       title: inputTitle,
       amount: inputAmount,
-      date: new Date(inputDate).toDateString(),
+      date: new Date(inputDate),
     };
 
     props.onSaveExpenseData(expenseData);
-    setInputTitle('')
-    setInputAmount('');
-    setInputDate('');
+    setInputTitle("");
+    setInputAmount("");
+    setInputDate("");
   };
 
   return (
@@ -40,11 +40,10 @@ const ExpenseForm = (props) => {
           <div className="new-expense__control">
             <label>Title</label>
             <input
-             type="text"
-             onChange={handleTitleChange}
-             value={inputTitle}
-           />
-
+              type="text"
+              onChange={handleTitleChange}
+              value={inputTitle}
+            />
           </div>
           <div className="new-expense__control">
             <label>Amount</label>
