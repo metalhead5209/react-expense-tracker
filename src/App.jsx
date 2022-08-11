@@ -27,7 +27,7 @@ const DUMB_DATA = [
     id: 2187,
     title: "Chair",
     amount: 50,
-    date: new Date(2019, 5, 12),
+    date: new Date(2020, 5, 12),
   },
   {
     id: 4566,
